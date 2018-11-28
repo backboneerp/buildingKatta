@@ -1,0 +1,73 @@
+.select-dropdown , select{
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+	border-radius:10px !important;
+	-webkit-border-radius: 10px !important;
+	-moz-border-radius: 10px !important;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.05);
+	-webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: 0 0 2px rgba(0, 0, 0, 0.05);
+    color: #282828;
+    display: block;
+    height: 48px;
+    margin: 0 0 16px;
+    padding: 15px;
+    position: relative;
+    width: 100%;
+    outline: none;
+    font-size: 12px;
+}
+
+select option{
+   font-size: 13px;
+   
+}
+.btn-singnup{
+   
+    border: 1px solid #e5e5e5;
+	border-radius:10px !important;
+	-webkit-border-radius: 10px !important;
+	-moz-border-radius: 10px !important;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.05);
+	-webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: 0 0 2px rgba(0, 0, 0, 0.05);
+    margin: 0 0 16px;
+    display: block;
+    height: 48px;
+    padding: 15px;
+    position: relative;
+    width: 100%;
+    background-color: #f88437;
+    color: #fff;
+	font-size:14px;
+   
+}
+.sign-up-bg{
+    padding: 0 0 0 0 !important;
+    margin:0 auto;
+    width:308px;
+}
+.required-fields{
+    border-left: 5px solid #00CD66;
+}
+.required-fields-error{
+    border-left: 5px solid #EE0000;
+}
+.red-css{
+    color: red;
+}
+span{
+    color: red;
+} 
+.bottom-border-2px{
+    border-bottom: 2px solid orangered;
+   
+   
+}
+.bottom-margin-5px{
+    margin-bottom: 10px !important ;
+}
+input[type='radio']{
+    width: 18px !important;
+    height: 18px !important;
+}

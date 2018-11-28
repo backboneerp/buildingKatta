@@ -1,0 +1,54 @@
+h1{
+    color:red;
+}
+.stepper ul{
+    list-style: none;
+    float: right;
+    right: 0px;
+    position: relative;
+    padding: 0px !important;
+}
+.stepper{
+    border-bottom: 1px solid #DEDEDE;  
+    overflow: auto;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.stepper ul li{
+    display: inline-block;
+    width:100px;
+    height:32px;
+    background: white;
+    margin: 5px;
+
+}
+.stepper > ul > li > a{
+    padding: 7px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    color: red;
+    display: block;
+    background: #DEDEDE;
+    text-align: center;
+    margin: 3px;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+
+
+ul{
+    list-style: none;
+}
+ul > li {
+    display: inline-block;
+    float: left;
+}
+ul>li>a>.round{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    background: red;
+}

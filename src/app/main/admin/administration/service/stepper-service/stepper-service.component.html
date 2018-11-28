@@ -1,0 +1,58 @@
+
+
+
+<mat-horizontal-stepper [linear]="isLinear" #stepper style="text-align: center;">
+  <mat-step [stepControl]="firstFormGroup">
+    <form [formGroup]="firstFormGroup">
+      <ng-template matStepLabel>Service</ng-template>
+      <mat-form-field>
+        <input matInput placeholder="Service Id" formControlName="firstCtrl" required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Service Name"  required>
+      </mat-form-field>
+      <div>
+
+        <button mat-raised-button matStepperNext color="primary">Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="secondFormGroup">
+    <form [formGroup]="secondFormGroup">
+      <ng-template matStepLabel> Details</ng-template>
+      <mat-form-field>
+        <input matInput placeholder=" Service Type" formControlName="secondCtrl" required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Description"  required>
+      </mat-form-field><br>
+
+    <div>
+        <button mat-raised-button matStepperPrevious color="primary">Back</button>
+        <button mat-raised-button matStepperNext color="primary">Next</button>
+      </div>
+    </form>
+  </mat-step>
+
+  <mat-step>
+    <ng-template matStepLabel>Step 3</ng-template>
+    <mat-form-field>
+      <input matInput placeholder="Start Date and Time" formControlName="secondCtrl" required>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Due Date and time"  required>
+    </mat-form-field><br>
+
+    <mat-form-field>
+      <input matInput placeholder="Assign Service"  required>
+    </mat-form-field>
+    <div>
+      <button mat-raised-button matStepperPrevious color="primary">Back</button>
+      <button mat-raised-button (click)="stepper.reset()" color="primary">Reset</button>
+    </div>
+  </mat-step>
+</mat-horizontal-stepper>
+

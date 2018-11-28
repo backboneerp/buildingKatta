@@ -1,0 +1,9 @@
+[type='text']{
+    outline: none;
+}
+.required-fields{
+    border-left: 5px solid #00CD66;
+}
+.required-fields-error{
+    border-left: 5px solid #EE0000;
+}

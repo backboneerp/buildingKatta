@@ -1,0 +1,91 @@
+<header></header>
+<div class="clearfix"></div>
+<div class="container page-full-width page-header-fixed">
+  <!-- BEGIN CONTAINER -->
+  <div class="page-container">
+    <!-- START DESKTOP HORIZANTAL MENU -->
+    <common-menu></common-menu>
+
+    <!-- END DESKTOP HORIZANTAL MENU -->
+    <mobile-menu></mobile-menu>
+    <!-- START MOBILE MENU -->
+    <!-- END MOBILE MENU -->
+    <!-- BEGIN CONTENT -->
+    <div class="page-content-wrapper">
+      <div class="page-content">
+        <!-- MOBILE PAGE HEADER-->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="btn-group pull-right setting setting-mobile">
+              <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000" data-close-others="true">
+                <i class="fa fa-cog"></i>
+              </button>
+              <ul class="dropdown-menu pull-right" role="menu">
+                <li>
+                  <a routerLink="#" routerLinkActive="active">
+                    Action </a>
+                </li>
+                <li>
+                  <a routerLink="#" routerLinkActive="active">
+                    Another action </a>
+                </li>
+                <li>
+                  <a routerLink="#" routerLinkActive="active">
+                    Something else here </a>
+                </li>
+                <li class="divider">
+                </li>
+                <li>
+                  <a routerLink="#" routerLinkActive="active">
+                    Separated link </a>
+                </li>
+              </ul>
+            </div>
+            <div class="clearfix">
+            </div>
+          </div>
+        </div>
+        <!-- MOBILE PAGE HEADER-->
+        <!--START MAIN PAGE CONTENT-->
+        <div class="row" id="menu">
+
+          <!--START NEW SECTION-->
+
+          <!--START NEW SECTION-->
+          <!--START NEW SECTION-->
+          <!--START NEW SECTION-->
+
+          <div class="col-xs-6 col-sm-4 col-md-3">
+            <div class="menu-bg">
+              <a routerLink="{{voucher_management_url}}" routerLinkActive="active">
+                <div class="menu-icon">
+                  <img src="assets/img/icon-sales-order.svg" alt="SALES ORDER">
+                </div>
+                <div class="menu-text">
+                  VOUCHER
+                </div>
+              </a>
+            </div>
+          </div>
+          <!--START NEW SECTION-->
+          <!--START NEW SECTION-->
+          <div class="col-xs-6 col-sm-4 col-md-3">
+            <div class="menu-bg">
+              <a routerLink="{{receipt_management_url}}" routerLinkActive="active">
+                <div class="menu-icon">
+                  <img src="assets/img/icon-requisition-note.svg" alt="Society Management">
+                </div>
+                <div class="menu-text">
+                  RECEIPT
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- END PAGE CONTENT-->
+      </div>
+    </div>
+    <!-- END CONTENT -->
+  </div>
+</div>
+<!-- END CONTENT -->

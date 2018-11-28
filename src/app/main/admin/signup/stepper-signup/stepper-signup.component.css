@@ -1,0 +1,71 @@
+.container {
+  margin-top: 50px;
+}
+
+
+::ng-deep .mat-horizontal-stepper-header-container {
+  display: none !important;
+}
+
+.example-card {
+  max-width: 400px;
+  width: 130%;
+  height: 425px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  margin: 0;
+  padding: 10px;
+}
+
+.mat-form-field {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.125;
+  font-family: Roboto,"Helvetica Neue",sans-serif;
+  padding: 15px;
+  width: 100%;
+}
+
+.mat-card-content, .mat-card-subtitle, .mat-card-title {
+  display: block;
+  margin-bottom: 70px;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-wrapper {
+  margin-right: -40px;
+  margin-left: -40px;
+  padding-bottom: 1.25em;
+}
+
+.mat-raised-button.mat-primary {
+  background-color: #1a73e8;
+}
+.mat-raised-button.right {
+  margin-left: 224px;
+}
+
+.mat-radio-button ~ .mat-radio-button {
+  padding: 10px;
+}
+
+
+
+@media (max-width: 768px),(max-width: 599px) {
+  .mat-raised-button.right[_ngcontent-c2] {
+    margin-left: 44px;
+  }
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+  .mat-raised-button.right[_ngcontent-c2] {
+    margin: 2px;
+  }
+}

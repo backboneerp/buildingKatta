@@ -1,0 +1,49 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+#heading th{
+    font-size: 10px !important;
+}
+
+
+@media (min-width: 768px) {
+  .modal-content {
+
+    align-content: center;
+    width: 970px;
+  }
+}
+
+.header-label[_ngcontent-c0] {
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  margin-left: -540px;
+}
+
+.mat-raised-button {
+  margin: 16px 176px;
+}
+
+.mat-checkbox-inner-container {
+  height: 16px!important;
+  width: 16px!important;
+}
+
+.material-icons {
+  font-size:16px;
+}
+
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td{
+  text-align: center;
+}
+
+.table thead tr th {
+  text-transform: uppercase;
+}
+
+canvas{
+  margin-left: -85px;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

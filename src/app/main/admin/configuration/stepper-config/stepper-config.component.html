@@ -1,0 +1,75 @@
+
+
+
+
+
+<mat-horizontal-stepper [linear]="isLinear" #stepper style="text-align: center;">
+  <mat-step [stepControl]="firstFormGroup">
+    <form [formGroup]="firstFormGroup">
+      <ng-template matStepLabel>Select Member</ng-template>
+      <mat-form-field>
+        <mat-select placeholder="Select Member">
+          <mat-option *ngFor="let food of foods" [value]="food.value">
+            {{food.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <div>
+
+        <button mat-raised-button matStepperNext color="primary">Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="secondFormGroup">
+    <form [formGroup]="secondFormGroup">
+      <ng-template matStepLabel>Maintenance Calculation</ng-template>
+      <mat-form-field>
+        <mat-select placeholder="Select Flat Type">
+          <mat-option *ngFor="let food of foods" [value]="food.value">
+            {{food.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Per SQFT" formControlName="secondCtrl" required>
+      </mat-form-field><br>
+
+      <mat-form-field>
+        <input matInput placeholder="Percentage"  required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Fixed Rs Per Month"  required>
+      </mat-form-field>
+
+
+
+      <div>
+        <button mat-raised-button matStepperPrevious color="primary">Back</button>
+        <button mat-raised-button matStepperNext color="primary">Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Other Income</ng-template>
+
+    <mat-form-field>
+      <mat-select placeholder="Select Extra Income Source">
+        <mat-option *ngFor="let food of foods" [value]="food.value">
+          {{food.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Price"  required>
+    </mat-form-field><br>
+    <div>
+      <button mat-raised-button color="primary">Add Extra Income Sourse</button>
+      <button mat-raised-button matStepperPrevious color="primary">Back</button>
+      <button mat-raised-button (click)="stepper.reset()" color="primary">Reset</button>
+    </div>
+  </mat-step>
+</mat-horizontal-stepper>
+

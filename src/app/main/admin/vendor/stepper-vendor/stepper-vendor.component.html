@@ -1,0 +1,72 @@
+
+
+
+<mat-horizontal-stepper [linear]="isLinear" #stepper style="text-align: center;">
+  <mat-step [stepControl]="firstFormGroup">
+    <form [formGroup]="firstFormGroup">
+      <ng-template matStepLabel>Vendor Details</ng-template>
+      <mat-form-field>
+        <input matInput placeholder="Registration No." formControlName="firstCtrl" required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Vehicle No"  required>
+      </mat-form-field> <br>
+
+      <mat-form-field>
+        <input matInput placeholder="Vendor Name"  required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Type of Vendor"  required>
+      </mat-form-field>
+      <div>
+
+        <button mat-raised-button matStepperNext color="primary">Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="secondFormGroup">
+    <form [formGroup]="secondFormGroup">
+      <ng-template matStepLabel>Address Details</ng-template>
+      <mat-form-field>
+        <input matInput placeholder="Address" formControlName="secondCtrl" required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Phone"  required>
+      </mat-form-field><br>
+
+      <mat-form-field>
+        <input matInput placeholder="Email"  required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Charges"  required>
+      </mat-form-field><br>
+
+      <mat-form-field>
+        <input matInput type="date" placeholder="From Date"  required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput type="date" placeholder="To Date"  required>
+      </mat-form-field>
+
+
+      <div>
+        <button mat-raised-button matStepperPrevious color="primary">Back</button>
+        <button mat-raised-button matStepperNext color="primary">Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Done</ng-template>
+    <h2>Thank You For Registration!</h2>
+    <div>
+      <button mat-raised-button matStepperPrevious color="primary">Back</button>
+      <button mat-raised-button (click)="stepper.reset()" color="primary">Reset</button>
+    </div>
+  </mat-step>
+</mat-horizontal-stepper>
+

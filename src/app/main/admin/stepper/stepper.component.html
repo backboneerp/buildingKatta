@@ -1,0 +1,99 @@
+
+<!--<button mat-raised-button (click)="isLinear = !isLinear" id="toggle-linear">-->
+  <!--{{!isLinear ? 'Enable linear mode' : 'Disable linear mode'}}-->
+<!--</button>-->
+<mat-horizontal-stepper [linear]="isLinear" #stepper style="text-align: center;">
+
+  <mat-step [stepControl]="firstFormGroup">
+    <form [formGroup]="firstFormGroup">
+      <ng-template matStepLabel>Society Details</ng-template>
+
+      <mat-form-field>
+        <input matInput placeholder="Society Name" formControlName="firstCtrl" required>
+
+      </mat-form-field>
+      <mat-form-field>
+        <mat-select placeholder="State">
+          <mat-option>None</mat-option>
+          <mat-option *ngFor="let state of states" [value]="state">{{state}}</mat-option>
+        </mat-select>
+      </mat-form-field><br>
+      <mat-form-field>
+        <mat-select>
+          <mat-option>None</mat-option>
+          <mat-option value="option1">Option 1</mat-option>
+          <mat-option value="option2">Option 2</mat-option>
+          <mat-option value="option3">Option 3</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field>
+
+        <input matInput placeholder="Registration No."  required>
+      </mat-form-field>
+      <div>
+
+        <button mat-raised-button matStepperNext color="primary">Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="secondFormGroup">
+    <form [formGroup]="secondFormGroup">
+      <ng-template matStepLabel>Address Details</ng-template>
+      <mat-form-field>
+        <input matInput placeholder="Name / House No." formControlName="secondCtrl" required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Street 1:"  required>
+      </mat-form-field><br>
+
+      <mat-form-field>
+        <input matInput placeholder="Street 2:"  required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Area Locality:"  required>
+      </mat-form-field><br>
+
+      <mat-form-field>
+        <input matInput placeholder="Landmark:"  required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-select placeholder="Select State">
+          <mat-option *ngFor="let food of foods" [value]="food.value">
+            {{food.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field><br>
+
+      <mat-form-field>
+        <mat-select placeholder="Select City">
+          <mat-option *ngFor="let food of foods" [value]="food.value">
+            {{food.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Pincode"  required>
+      </mat-form-field>
+
+
+
+      <div>
+        <button mat-raised-button matStepperPrevious color="primary">Back</button>
+        <button mat-raised-button matStepperNext color="primary">Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Done</ng-template>
+    <h2>Thank You For Registration!</h2>
+    <div>
+      <button mat-raised-button matStepperPrevious color="primary">Back</button>
+      <button mat-raised-button (click)="stepper.reset()" color="primary">Reset</button>
+    </div>
+  </mat-step>
+</mat-horizontal-stepper>
+

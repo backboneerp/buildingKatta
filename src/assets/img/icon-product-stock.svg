@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="80px" height="70px" viewBox="0 0 80 70" enable-background="new 0 0 80 70" xml:space="preserve">
+<rect x="23.349" y="8.49" fill="#FFD162" width="16.59" height="25.761"/>
+<rect x="39.939" y="8.49" fill="#F6B64D" width="16.586" height="25.761"/>
+<g>
+	<g>
+		<g>
+			<defs>
+				<rect id="SVGID_1_" x="39.939" y="8.49" width="16.586" height="25.761"/>
+			</defs>
+			<clipPath id="SVGID_2_">
+				<use xlink:href="#SVGID_1_"  overflow="visible"/>
+			</clipPath>
+			<polygon clip-path="url(#SVGID_2_)" fill="#E49C3E" points="56.525,8.49 39.939,8.49 39.939,8.498 47.018,34.251 56.525,34.251 
+							"/>
+		</g>
+	</g>
+</g>
+<rect x="40.768" y="35.92" fill="#FFD162" width="16.59" height="25.762"/>
+<rect x="57.357" y="35.92" fill="#F6B64D" width="16.586" height="25.762"/>
+<g>
+	<g>
+		<g>
+			<defs>
+				<rect id="SVGID_3_" x="57.357" y="35.92" width="16.586" height="25.762"/>
+			</defs>
+			<clipPath id="SVGID_4_">
+				<use xlink:href="#SVGID_3_"  overflow="visible"/>
+			</clipPath>
+			<polygon clip-path="url(#SVGID_4_)" fill="#E49C3E" points="73.943,35.92 57.357,35.92 57.357,35.928 64.436,61.682 
+				73.943,61.682 			"/>
+		</g>
+	</g>
+</g>
+<rect x="5.931" y="35.92" fill="#FFD162" width="16.59" height="25.762"/>
+<rect x="22.521" y="35.92" fill="#F6B64D" width="16.587" height="25.762"/>
+<g>
+	<g>
+		<g>
+			<defs>
+				<rect id="SVGID_5_" x="22.521" y="35.92" width="16.587" height="25.762"/>
+			</defs>
+			<clipPath id="SVGID_6_">
+				<use xlink:href="#SVGID_5_"  overflow="visible"/>
+			</clipPath>
+			<polygon clip-path="url(#SVGID_6_)" fill="#E49C3E" points="39.108,35.92 22.521,35.92 22.521,35.928 29.6,61.682 39.108,61.682 
+							"/>
+		</g>
+	</g>
+</g>
+</svg>

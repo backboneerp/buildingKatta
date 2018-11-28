@@ -1,0 +1,30 @@
+
+<mat-horizontal-stepper [linear]="isLinear" #stepper>
+  <mat-step [stepControl]="firstFormGroup">
+    <form [formGroup]="firstFormGroup">
+
+      <mat-form-field>
+        <input matInput placeholder="Email or phone" formControlName="email" required>
+
+      </mat-form-field>
+      <div>
+        <button mat-button style="color: #1a73e8;">Forgot email?</button>
+        <button mat-button style="color: #1a73e8;" (click)="btnClick2();">Create account</button>
+        <button mat-raised-button color="primary" matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="secondFormGroup">
+    <form [formGroup]="secondFormGroup">
+
+      <mat-form-field>
+        <input matInput placeholder="Password" formControlName="password" required>
+      </mat-form-field>
+      <div>
+        <button mat-button style="color: #1a73e8;">Forgot pasword?</button>
+        <button mat-raised-button color="primary" matStepperNext (click)="btnClick();">Next</button>
+      </div>
+    </form>
+  </mat-step>
+
+</mat-horizontal-stepper>

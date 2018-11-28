@@ -1,0 +1,106 @@
+<header></header>
+<div class="clearfix">
+</div>
+<div class="container page-full-width">
+    <!-- BEGIN CONTAINER -->
+	<div id="login" class="page-container">
+        <!-- BEGIN CONTENT -->
+		<div class="page-content-wrapper">
+            <form [formGroup]="formGroup" (ngSubmit)="post()">
+            <div class="row" >
+                
+                <div class="col-md-12">
+                <!--START MAIN PAGE CONTENT-->
+              <div class="col-md-4"  style="">
+                        <div class="sign-in-bg">
+
+                                    <input autocomplete="off" id="user"  type="text"   placeholder="Asset Name"  formControlName="assetName"  name="assetName" class=" {{assetNameCss}}" />
+                                    <div class="error-text">
+                                        <span class="padding-left">{{assetNameError}}</span>
+                                    </div>
+                                    <input autocomplete="off"  type="text"   placeholder="Price" formControlName="price" name="price" class=" {{ priceCss}}" />
+                                    <div class="error-text"  >
+                                        <span class="padding-left ">{{priceError}}</span>
+                                    </div>
+                                    <input autocomplete="off"  type="text"    placeholder="charges" formControlName="charges" name="charges" class="{{chargesCss}}" />
+                                    <div class="error-text"  >
+                                        <span class="padding-left ">{{chargesError}}</span>
+                                    </div>
+                            </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="sign-in-bg">
+                        <select formControlName="owenerName" name="owenerName" class="{{owenerNameCss}}">
+                            <option value="none">select asset owener</option>
+                            <option value="Dattatray">Dattatray Sabne</option>
+                            <option value="Dipak Shelar">Dipak Shelar</option>
+                        </select>
+                        <div class="error-text"  >
+                                <span class="padding-left ">{{owenerNameError}}</span>
+                            </div>
+                        <div class="">
+                        <input  id="date" class="{{validFromDateCss}} form-control form-control-inline date-picker" formControlName="validFromDate" name="validFromDate" type="text" placeholder="Valid Date To"/>
+                        </div>
+                        <div class="error-text"  >
+                            <span class="padding-left">{{validFromDateError}}</span>
+                        </div>
+                        <div class="">
+                            <input class="{{validToDateCss}} form-control form-control-inline date-picker" formControlName="validToDate" name="validToDate" placeholder="Valid Date From" type="text">
+                        </div>
+                        <div class="error-text"  >
+                            <span class="padding-left">{{validToDateError}}</span>
+                        </div>
+                        
+                       
+                       
+                        <div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" style="">
+                    <div class="sign-in-bg" id="outer" >
+                                <input autocomplete="off" type="text"   placeholder="Worranty" formControlName="worranty" name="worranty" class="{{worrantyCss}}" />
+                                <div class="error-text" >
+                                    <span class="padding-left">{{worrantyError}}</span>
+                                </div>
+                                <div style="margin-bottom: 10px;">
+                                    <h3 class="text-center bottom-border-2px bottom-margin-5px">Asset Type</h3>
+                                    <label class="radio-inline" style="margin-right: 15px;">
+                                    <input  formControlName="assetType" type="radio" name="assetType" id="paid"  value="Movable" />Movable</label>
+                                    <label class="radio-inline pull-right">
+                                    <input type="radio" formControlName="assetType" name="assetType" id="trial" value="Non Movable" [checked]='true' />Non Movable</label>
+                                </div>                  
+                        </div>
+        </div>
+        </div>
+        		<!-- END PAGE CONTENT-->
+        </div>
+            <div class="row" style="margin-top: 0px !important;margin-bottom:100px;">
+                    <div class="col-md-12" style="">
+                        <div class="col-md-4 " style="">
+                                <div class="sign-up-bg">
+                                    <input  value="BACK" type="button" class="btn-singnup  " value="BACK">
+                                </div>
+                        </div>
+                        <div class="col-md-4 ">
+                            <div class="sign-up-bg">
+                                <input   value="RESET" type="button" class="btn-singnup">
+                            </div>
+                        </div>
+                        <div class="col-md-4 ">
+                            <div class="sign-up-bg">
+                                <input formControlName="submitButton" name="submitButton" type="submit"  class="btn-singnup">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </form>
+        </div>
+     <!-- END CONTENT -->
+	</div>
+	<!-- END CONTAINER -->
+	<!-- BEGIN FOOTER -->
+	<!-- END FOOTER -->
+</div>
+<footer></footer>
+

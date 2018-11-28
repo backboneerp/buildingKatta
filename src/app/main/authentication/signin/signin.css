@@ -1,0 +1,27 @@
+.right{
+       border-color: green;
+}
+.default{
+    border-color: none;
+}
+
+[name='username']{
+   
+    outline: none;
+}
+[name='password']{
+   
+    outline: none;
+}
+[name='loginSubmit']{
+    outline: none;
+}
+.wrong-text{
+    color: red;
+}
+.required-fields{
+    border-left: 5px solid #00CD66;
+}
+.required-fields-error{
+    border-left: 5px solid #EE0000;
+}

@@ -1,0 +1,55 @@
+
+
+
+
+<mat-horizontal-stepper [linear]="isLinear" #stepper style="text-align: center;">
+  <mat-step [stepControl]="firstFormGroup">
+    <form [formGroup]="firstFormGroup">
+      <ng-template matStepLabel>Step 1</ng-template>
+      <mat-form-field>
+        <input matInput placeholder="Select Module" formControlName="firstCtrl" required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Select Report"  required>
+      </mat-form-field>
+      <div>
+
+        <button mat-raised-button matStepperNext color="primary">Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="secondFormGroup">
+    <form [formGroup]="secondFormGroup">
+      <ng-template matStepLabel> Step 2</ng-template>
+
+      <mat-form-field>
+        <input matInput placeholder="Select Date From"  required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Select Date From"  required>
+      </mat-form-field>
+      <div>
+        <button mat-raised-button matStepperPrevious color="primary">Back</button>
+        <button mat-raised-button matStepperNext color="primary">Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Step 3</ng-template>
+    <mat-form-field>
+      <input matInput placeholder="View Report"  required>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Print Report"  required>
+    </mat-form-field>
+
+    <div>
+      <button mat-raised-button matStepperPrevious color="primary">Back</button>
+      <button mat-raised-button (click)="stepper.reset()" color="primary">Reset</button>
+    </div>
+  </mat-step>
+</mat-horizontal-stepper>
+

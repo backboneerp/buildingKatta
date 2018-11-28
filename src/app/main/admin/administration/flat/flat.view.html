@@ -1,0 +1,544 @@
+
+<header></header>
+<div class="container page-header-fixed page-full-width">
+	<!-- BEGIN CONTAINER -->
+	<div id="enquiry-management" class="page-container">
+		<!-- START DESKTOP HORIZANTAL MENU -->
+
+		<!-- END DESKTOP HORIZANTAL MENU -->
+
+		<!-- START MOBILE MENU -->
+
+		<!-- END MOBILE MENU -->
+        <div class="hor-menu margin-top-10">
+			<h3 class="pull-left">Flat Management</h3>
+
+			<div class="serch-bg">
+                <a href=""  class="search-plus" data-toggle="modal" data-target="#myModal">+</a>
+				<a href=""  class="btn blue pull-right">Search</a>
+
+                <div class="btn-group pull-right setting">
+                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000" data-close-others="true">
+                    <i class="fa fa-sort-down"></i>
+                    </button>
+                    <div class="dropdown-menu pull-right" role="menu">
+						<p class="userlist_close pull-right"><a routerLink="#"><img src="assets/img/portlet-remove-icon.png" width="11" height="16" alt="Close"></a></p>
+	                    <h4 class="pull-left"><strong>Advanced Search</strong></h4>
+                        <div class="search-dropdown">
+                        	<div class="col-lg-4">
+                            	<label class="control-label">Date Range</label>
+                            </div>
+                            <div class="col-lg-8">
+                            	<select class="form-control bs-select">
+                                    <option value="10">Last Year</option>
+                                    <option value="9">This Year</option>
+                                    <option value="8">Last Quarter</option>
+                                    <option value="7">This Quarter</option>
+                                    <option value="6">Custom Date</option>
+                                    <option value="5">Today</option>
+                                    <option value="4">Last Month</option>
+                                    <option value="3">This Month</option>
+                                    <option value="2">Last Week</option>
+                                    <option value="1">This Week</option>
+                            </select>
+                            </div>
+                        </div>
+                        <div class="search-dropdown">
+                        	<div class="col-lg-4">
+                            	<label class="control-label">From To</label>
+                            </div>
+                            <div class="col-lg-8">
+                            	<input name="" class="form-control date-from" type="text" placeholder="">
+                                <input name="" class="form-control date-to" type="text" placeholder="">
+                            </div>
+                        </div>
+                        <div class="search-dropdown">
+                        	<div class="col-lg-4">
+                            	<label class="control-label">Customer</label>
+                            </div>
+                            <div class="col-lg-8">
+                            	<input name="" class="form-control" type="text" placeholder="">
+                            </div>
+                        </div>
+                        <div class="search-dropdown">
+                        	<div class="col-lg-4">
+                            	<label class="control-label">Sales Man</label>
+                            </div>
+                            <div class="col-lg-8">
+                            	<input name="" class="form-control" type="text" placeholder="">
+                            </div>
+                        </div>
+                        <div class="search-dropdown">
+                        	<div class="col-lg-4">
+                            	<label class="control-label">Status</label>
+                            </div>
+                            <div class="col-lg-8">
+                            	<input name="" class="form-control" type="text" placeholder="">
+                            </div>
+                        </div>
+
+                        <div class="search-dropdown">
+                        	<div class="col-lg-12">
+                                <input type="button" value="Advanced Search"  class="btn-advanced-search">
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <input name="" class="input-large" type="text" placeholder="Search...">
+
+			</div>
+
+
+
+
+
+            <!--START Customer Management popup-->
+			<div  id="addModel" class="modal fade bs-example-modal-lg1" tabindex="-1" role="dialog" aria-hidden="true">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<h4 class="pull-left">Add Asset Management</h4>
+						<a data-dismiss="modal" class="pull-right close-btn"><i class="fa fa-times-circle" style="top:0;"></i>
+						</a>
+						<div class="serch-bg">
+							<input type="button"  value="add asset"  data-dismiss="modal" class="btn orange pull-right">
+							<input type="button"  value="SEARCH"   class="btn blue pull-right">
+							<input name="text" class="input-medium" type="text" placeholder="Search...">
+						</div>
+						<div class="clearfix">
+						</div>
+						<div class="divider2">
+						</div>
+						<div class="tools">
+							<a title="Print" routerLink="#" routerLinkActive="active"><i class="fa fa-print"></i></a>
+							<a title="Basket" routerLink="#" routerLinkActive="active"><i class="fa fa-suitcase"></i></a>
+							<a title="Search" routerLink="#" routerLinkActive="active"><i class="fa fa-search"></i></a>
+							<a title="Mail" routerLink="#" routerLinkActive="active"><i class="fa fa-envelope"></i></a>
+							<a title="Alarm" routerLink="#" routerLinkActive="active"><i class="fa fa-clock-o"></i></a>
+						</div>
+						<div class="clearfix">
+						</div>
+						<div class="portlet-body">
+                        <div class="table-responsive1">
+
+							<div class="col-sm-12 col-md-12" style="margin-top: 20px;">
+								<div class="col-sm-4">
+
+										<input autocomplete="off"  id="user"  type="text"   placeholder="Asset Name"    name="assetName" class=" input" />
+										<div class="error-text">
+											<span class="padding-left"></span>
+										</div>
+										<select>
+											<option value="none">select asset owener</option>
+											<option value="dattatray">Dattatray Sabne</option>
+											<option value="dipak">Dipak Shelar</option>
+											<option value="nisha">Nisha More</option>
+										</select>
+										<div class="error-text"  >
+											<span class="padding-left "></span>
+										</div>
+										<input autocomplete="off"  type="text"    placeholder="charges"  name="charges" class="input" />
+										<div class="error-text"  >
+											<span class="padding-left "></span>
+										</div>
+
+								</div>
+								<div class="col-sm-4">
+									<div class="">
+										<input autocomplete="off" id="user"  type="text"   placeholder="Price"    name="assetName" class="input" />
+										<div class="error-text">
+											<span class="padding-left"></span>
+										</div>
+
+										<input class="input form-control form-control-inline date-picker" name="validToDate" placeholder="Valid Date From" type="text">
+										<div class="error-text"  >
+											<span class="padding-left"></span>
+										</div>
+										<input  id="date" class="input form-control form-control-inline date-picker"  name="validFromDate" type="text" placeholder="Valid Date To"/>
+										<div class="error-text"  >
+											<span class="padding-left"></span>
+										</div>
+
+
+								</div>
+								</div>
+
+
+								<div class="col-sm-4">
+									<div class="">
+										<input autocomplete="off" type="text"   placeholder="Worranty"  name="worranty" class="input" />
+										<div class="error-text" >
+											<span class="padding-left"></span>
+										</div>
+										<div style="margin-bottom: 10px;">
+											<h3 class="text-center bottom-border-2px" style="padding: 10px;margin-bottom: 5px;">Asset Type</h3>
+											<label class="radio-inline" style="margin-right: 15px;">
+											<input  type="radio" name="assetType" id="paid"  value="Movable" />Movable</label>
+											<label class="radio-inline pull-right">
+											<input type="radio"  name="assetType" id="trial" value="Non Movable" [checked]='true' />Non Movable</label>
+										</div>
+
+								</div>
+
+
+							</div>
+
+
+
+						</div>
+
+
+
+
+
+
+
+
+
+
+
+						<div class="col-sm-12 col-lg-12 col-md-12 col-xs-12">
+							<div class="col-md-4 " style="">
+									<div class="">
+										<input  value="BACK" type="button" class="btn-singnup  " value="BACK">
+									</div>
+							</div>
+							<div class="col-md-4 ">
+								<div class="">
+									<input   value="RESET" type="button" class="btn-singnup">
+								</div>
+							</div>
+							<div class="col-md-4 ">
+								<div class="">
+									<input name="submitButton" type="submit"  class="btn-singnup">
+								</div>
+							</div>
+						</div>
+
+						</div>
+						<div class="popup-btn-bg1">
+							<button [hidden]="true" class="btn default"  type="button"></button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--END Customer Management popup-->
+
+
+		</div>
+		<!-- BEGIN CONTENT -->
+		<div class="page-content-wrapper">
+			<div class="page-content">
+				<!--START MAIN PAGE CONTENT-->
+				<div class="row">
+					<div class="col-md-12">
+						<ul class="page-breadcrumb breadcrumb">
+							<li class="btn-group">
+							<a routerLink="/administration" routerLinkActive="active" class="btn default">
+							Back </a>
+							</li>
+							<li>
+							<i class="fa fa-home"></i>
+							<a routerLink="/home" routerLinkActive="active">
+							HOME </a>
+							<i class="fa fa-angle-right"></i>
+							</li>
+							<li>
+							<a routerLink="#" routerLinkActive="active">
+							FLAT MANAGEMENT </a>
+							</li>
+						</ul>
+						<!-- END PAGE TITLE & BREADCRUMB-->
+					</div>
+				</div>
+				<div class="row">
+					<!--START NEW SECTION-->
+					<div class="col-sm-3">
+						<div class="branchwise-sales">
+							<form [formGroup]="formGroup">
+								<h4>Filter</h4>
+								<h5>Status</h5>
+                <div class="checkbox-list">
+                  <label>
+                    <mat-checkbox>OPEN (3)</mat-checkbox>
+
+                  </label>
+                  <label>
+                    <mat-checkbox>CLOSE (5)</mat-checkbox>
+                  </label>
+                </div>
+                <h5>Refference Type</h5>
+                <div class="checkbox-list">
+                  <label>
+                    <mat-checkbox>Online (3)</mat-checkbox>
+                  </label>
+                  <label>
+                    <mat-checkbox>Direct (5)</mat-checkbox>
+                  </label>
+                </div>
+                <h5>Flat Count</h5>
+                <div class="checkbox-list">
+                  <label>
+                    <mat-checkbox> Total (8))</mat-checkbox>
+                  </label>
+                </div>
+								<h4 class="enquiry-status">FLAT Status</h4>
+								<div class="stock-management-grph">
+                  <div style="display: block;height: 250px;width: 500px;margin-left: -40px;">
+                    <canvas baseChart
+                            [colors]="chartColors"
+                            [data]="pieChartData"
+                            [labels]="pieChartLabels"
+                            [chartType]="pieChartType"
+                            (chartHover)="chartHovered($event)"
+                            (chartClick)="chartClicked($event)"></canvas>
+                  </div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<!--START NEW SECTION-->
+					<!--START NEW SECTION-->
+                    <div class="col-sm-9">
+						<div class="branchwise-sales">
+							<h4 class="pull-left">Flat Details</h4>
+
+							<div class="clearfix">
+							</div>
+							<div class="portlet-body">
+                            	<div class="table-responsive1">
+								<table class="table table-striped">
+								<thead>
+								<tr id="heading">
+									<th>
+                    <mat-checkbox></mat-checkbox>
+									</th>
+                  <th>
+                    Action
+                  </th>
+									<th>
+										 FLAT NO.
+									</th>
+									<th>
+										SOCIETY NAME
+									</th>
+									<th>
+										FAZE
+									</th>
+									<th>
+										FLAT OWENER
+									</th>
+									<th>
+										 CO-OWENER
+									</th>
+									<th>
+										FLAT TYPE
+									</th>
+									<!--<th>-->
+										<!--WHO IS STAYING-->
+									<!--</th>-->
+									<th>
+										<i class="fa fa-align-center"></i>
+									</th>
+									<th>
+										 STATUS
+									</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr *ngFor="let flat of flats">
+									<td>
+                    <mat-checkbox></mat-checkbox>
+									</td>
+                  <td>
+
+                    <div class="tools">
+                      <button mat-icon-button>
+                        <mat-icon aria-label="Example icon-button with a update icon">update</mat-icon>
+                      </button>
+
+                      <button mat-icon-button>
+                        <mat-icon aria-label="Example icon-button with a delete icon">delete</mat-icon>
+                      </button>
+
+                      <button mat-icon-button>
+                        <mat-icon aria-label="Example icon-button with a print icon">print</mat-icon>
+                      </button>
+
+                      <button mat-icon-button>
+                        <mat-icon aria-label="Example icon-button with a mail icon">mail</mat-icon>
+                      </button>
+
+                    </div>
+                  </td>
+									<td>
+										<span class="pull-left">{{flat.flatNo}}</span>
+									</td>
+									<td>
+										 {{flat.societyName}}
+									</td>
+									<td>
+										 {{flat.faze}}
+									</td>
+									<td>
+										 {{flat.flatOwener}}
+									</td>
+									<td>
+										 {{flat.coOwener}}
+									</td>
+									<td>
+										 {{flat.flatType}}
+									</td>
+									<!--<td>-->
+										 <!--{{flat.whoIsStaying}}-->
+									<!--</td>-->
+									<td>
+										<i class="icon-code color-orange">M</i>
+									</td>
+									<td class="open">
+										 {{flat.status}}
+									</td>
+								</tr>
+								</tbody>
+								</table>
+                                </div>
+							</div>
+						</div>
+						<div>
+							<ul class="pagination">
+								<li>
+								<a routerLink="#" routerLinkActive="active">
+								<i class="fa fa-angle-left"></i>
+								</a>
+								</li>
+								<li>
+								<a routerLink="#" routerLinkActive="active">1</a>
+								</li>
+								<li>
+								<a routerLink="#" routerLinkActive="active">2</a>
+								</li>
+								<li>
+								<a routerLink="#" routerLinkActive="active">3</a>
+								</li>
+								<li>
+								<a routerLink="#" routerLinkActive="active">4</a>
+								</li>
+								<li>
+								<a routerLink="#" routerLinkActive="active">
+								<i class="fa fa-angle-right"></i>
+								</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- END PAGE CONTENT-->
+			</div>
+		</div>
+
+        <!--START Customer Management popup-->
+			<div class="modal fade email-template" tabindex="-1" role="dialog" aria-hidden="true">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<h4 class="pull-left">Email Templates</h4>
+						<a data-dismiss="modal" class="pull-right close-btn"><i class="fa fa-times-circle" style="top:0;"></i>
+						</a>
+						<div class="clearfix"></div>
+						<div class="divider2"></div>
+						<div class="portlet-body margin-top-20 email-bg">
+                        	<div class="col-lg-12">
+                            	<div class="row">
+                                    <div class="col-lg-2"><label>To</label></div>
+                                    <div class="col-lg-10"><input name="" type="text" class="form-control"></div>
+                            	</div>
+                                <div class="row">
+                                    <div class="col-lg-2"><label class="control-label">cc</label></div>
+                                    <div class="col-lg-10"><input name="" type="text" class="form-control"></div>
+                            	</div>
+                                <div class="row">
+                                    <div class="col-lg-2"><label class="control-label">Bcc</label></div>
+                                    <div class="col-lg-10"><input name="" type="text" class="form-control"></div>
+                            	</div>
+                                <div class="row">
+                                    <div class="col-lg-2"><label class="control-label">Subject</label></div>
+                                    <div class="col-lg-10"><input name="" type="text" class="form-control"></div>
+                            	</div>
+                                <div class="row">
+                                    <div class="col-lg-2"><label class="control-label">Email Body</label></div>
+                                    <div class="col-lg-10"><textarea name="" cols="" rows="8" class="form-control"></textarea></div>
+                            	</div>
+                                <div class="row">
+                                    <div class="col-lg-2"><label class="control-label">Attachment</label></div>
+                                    <div class="col-lg-6"><input name="" type="file"></div>
+                            	</div>
+                                <div class="row margin-bottom-10">
+                                    <div class="col-lg-2"></div>
+                                    <div class="col-lg-6"><input name="" type="button" class="btn orange" value="Send Email"></div>
+                            	</div>
+                            </div>
+						</div>
+                        <div class="clearfix"></div>
+
+					</div>
+				</div>
+			</div>
+		<!--END Customer Management popup-->
+
+		<!-- END CONTENT -->
+	</div>
+	<!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog modal-lg" align="center">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <div class="headeModel">
+              <label class="header-label" style="color: #000000;">Flat Management</label>
+              <ul  id="crud-option">
+                <li><a title="Add" data-toggle="pill" href="#add">
+
+                  <button mat-icon-button>
+                    <mat-icon aria-label="Example icon-button with a add icon">add</mat-icon>
+                  </button>
+                </a>
+                </li>
+                <li><a title="Edit" data-toggle="pill" href="#edit">
+
+                  <button mat-icon-button>
+                    <mat-icon aria-label="Example icon-button with a edit icon">edit</mat-icon>
+                  </button>
+                </a>
+                </li>
+                <li><a title="Delete" data-toggle="pill" href="#delete">
+
+                  <button mat-icon-button>
+                    <mat-icon aria-label="Example icon-button with a delete icon">delete</mat-icon>
+                  </button>
+
+
+                </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="tab-content">
+
+
+
+
+
+              <app-stepper-flat></app-stepper-flat>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	<!-- END CONTAINER -->
+	<footer></footer>

@@ -1,0 +1,81 @@
+
+
+
+
+<mat-horizontal-stepper [linear]="isLinear" #stepper style="text-align: center;">
+  <mat-step [stepControl]="firstFormGroup">
+    <form [formGroup]="firstFormGroup">
+      <ng-template matStepLabel> Flat</ng-template>
+
+      <mat-form-field>
+        <input matInput placeholder="Flat ID" formControlName="firstCtrl" required>
+
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Flat No."  required>
+      </mat-form-field><br>
+
+      <mat-form-field>
+        <input matInput placeholder="Society Name"  required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Faze"  required>
+      </mat-form-field><br>
+
+      <mat-form-field>
+        <input matInput placeholder="Select Flat Owner"  required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder=" Select Co Owner:"  required>
+      </mat-form-field>
+      <div>
+
+        <button mat-raised-button matStepperNext color="primary">Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="secondFormGroup">
+    <form [formGroup]="secondFormGroup">
+      <ng-template matStepLabel> Details</ng-template>
+      <mat-form-field>
+        <input matInput placeholder=" Flat Type" formControlName="secondCtrl" required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder=" Flat Rent"  required>
+      </mat-form-field><br>
+
+      <mat-form-field>
+        <input matInput placeholder=" Maintenance Cost"  required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Select Service"  required>
+      </mat-form-field>
+
+      <div>
+        <button mat-raised-button matStepperPrevious color="primary">Back</button>
+        <button mat-raised-button matStepperNext color="primary">Next</button>
+      </div>
+    </form>
+  </mat-step>
+
+  <mat-step [stepControl]="secondFormGroup">
+    <form [formGroup]="secondFormGroup">
+      <ng-template matStepLabel> Step 3</ng-template>
+
+      <mat-form-field>
+        <input matInput placeholder="Who is staying in flat"  required>
+      </mat-form-field>
+
+
+      <div>
+        <button mat-raised-button matStepperPrevious color="primary">Back</button>
+        <button mat-raised-button matStepperNext color="primary">Next</button>
+      </div>
+    </form>
+  </mat-step>
+</mat-horizontal-stepper>
+

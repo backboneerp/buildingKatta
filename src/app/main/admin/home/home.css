@@ -1,0 +1,10 @@
+@media (max-width: 1000px) {
+  .page-header-fixed .page-container {
+    margin-top: 80px;
+    margin-left: -50px;
+    margin-right: 10px;
+  }
+}
+
+
+

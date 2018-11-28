@@ -1,0 +1,810 @@
+
+<header></header>
+<div class="container page-header-fixed page-full-width">
+  <!-- BEGIN CONTAINER -->
+  <div id="enquiry-management" class="page-container">
+    <!-- START DESKTOP HORIZANTAL MENU -->
+
+    <!-- END DESKTOP HORIZANTAL MENU -->
+
+    <!-- START MOBILE MENU -->
+
+    <!-- END MOBILE MENU -->
+
+    <div class="hor-menu margin-top-10">
+      <h3 class="pull-left">REPORTS</h3>
+
+      <div class="serch-bg">
+        <a href=""  class="search-plus" data-toggle="modal" data-target="#myModal">+</a>
+        <a href=""  class="btn blue pull-right">Search</a>
+
+        <div class="btn-group pull-right setting">
+          <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000" data-close-others="true">
+            <i class="fa fa-sort-down"></i>
+          </button>
+          <div class="dropdown-menu pull-right" role="menu">
+            <p class="userlist_close pull-right"><a routerLink="#"><img src="assets/img/portlet-remove-icon.png" width="11" height="16" alt="Close"></a></p>
+            <h4 class="pull-left"><strong>Advanced Search</strong></h4>
+            <div class="search-dropdown">
+              <div class="col-lg-4">
+                <label class="control-label">Date Range</label>
+              </div>
+              <div class="col-lg-8">
+                <select class="form-control bs-select">
+                  <option value="10">Last Year</option>
+                  <option value="9">This Year</option>
+                  <option value="8">Last Quarter</option>
+                  <option value="7">This Quarter</option>
+                  <option value="6">Custom Date</option>
+                  <option value="5">Today</option>
+                  <option value="4">Last Month</option>
+                  <option value="3">This Month</option>
+                  <option value="2">Last Week</option>
+                  <option value="1">This Week</option>
+                </select>
+              </div>
+            </div>
+            <div class="search-dropdown">
+              <div class="col-lg-4">
+                <label class="control-label">From To</label>
+              </div>
+              <div class="col-lg-8">
+                <input name="" class="form-control date-from" type="text" placeholder="">
+                <input name="" class="form-control date-to" type="text" placeholder="">
+              </div>
+            </div>
+            <div class="search-dropdown">
+              <div class="col-lg-4">
+                <label class="control-label">Customer</label>
+              </div>
+              <div class="col-lg-8">
+                <input name="" class="form-control" type="text" placeholder="">
+              </div>
+            </div>
+            <div class="search-dropdown">
+              <div class="col-lg-4">
+                <label class="control-label">Sales Man</label>
+              </div>
+              <div class="col-lg-8">
+                <input name="" class="form-control" type="text" placeholder="">
+              </div>
+            </div>
+            <div class="search-dropdown">
+              <div class="col-lg-4">
+                <label class="control-label">Status</label>
+              </div>
+              <div class="col-lg-8">
+                <input name="" class="form-control" type="text" placeholder="">
+              </div>
+            </div>
+
+            <div class="search-dropdown">
+              <div class="col-lg-12">
+                <input type="button" value="Advanced Search"  class="btn-advanced-search">
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+        <input name="" class="input-large" type="text" placeholder="Search...">
+
+      </div>
+
+      <!--START Customer Management popup-->
+      <div  id="addModel" class="modal fade bs-example-modal-lg1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <h4 class="pull-left">Add Reports</h4>
+            <a data-dismiss="modal" class="pull-right close-btn"><i class="fa fa-times-circle" style="top:0;"></i>
+            </a>
+            <div class="serch-bg">
+              <input type="button"  value="add asset"  data-dismiss="modal" class="btn orange pull-right">
+              <input type="button"  value="SEARCH"   class="btn blue pull-right">
+              <input name="text" class="input-medium" type="text" placeholder="Search...">
+            </div>
+            <div class="clearfix">
+            </div>
+            <div class="divider2">
+            </div>
+            <div class="tools">
+              <a title="Print" routerLink="#" routerLinkActive="active"><i class="fa fa-print"></i></a>
+              <a title="Basket" routerLink="#" routerLinkActive="active"><i class="fa fa-suitcase"></i></a>
+              <a title="Search" routerLink="#" routerLinkActive="active"><i class="fa fa-search"></i></a>
+              <a title="Mail" routerLink="#" routerLinkActive="active"><i class="fa fa-envelope"></i></a>
+              <a title="Alarm" routerLink="#" routerLinkActive="active"><i class="fa fa-clock-o"></i></a>
+            </div>
+            <div class="clearfix">
+            </div>
+            <div class="portlet-body">
+              <div class="table-responsive1">
+
+                <div class="col-sm-12 col-md-12" style="margin-top: 20px;">
+                  <div class="col-sm-4">
+
+                    <input autocomplete="off"  id="user"  type="text"   placeholder="Asset Name"    name="assetName" class=" input" />
+                    <div class="error-text">
+                      <span class="padding-left"></span>
+                    </div>
+                    <select>
+                      <option value="none">select asset owener</option>
+                      <option value="dattatray">Dattatray Sabne</option>
+                      <option value="dipak">Dipak Shelar</option>
+                      <option value="nisha">Nisha More</option>
+                    </select>
+                    <div class="error-text"  >
+                      <span class="padding-left "></span>
+                    </div>
+                    <input autocomplete="off"  type="text"    placeholder="charges"  name="charges" class="input" />
+                    <div class="error-text"  >
+                      <span class="padding-left "></span>
+                    </div>
+
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="">
+                      <input autocomplete="off" id="user"  type="text"   placeholder="Price"    name="assetName" class="input" />
+                      <div class="error-text">
+                        <span class="padding-left"></span>
+                      </div>
+
+                      <input class="input form-control form-control-inline date-picker" name="validToDate" placeholder="Valid Date From" type="text">
+                      <div class="error-text"  >
+                        <span class="padding-left"></span>
+                      </div>
+                      <input  id="date" class="input form-control form-control-inline date-picker"  name="validFromDate" type="text" placeholder="Valid Date To"/>
+                      <div class="error-text"  >
+                        <span class="padding-left"></span>
+                      </div>
+
+
+                    </div>
+                  </div>
+
+
+                  <div class="col-sm-4">
+                    <div class="">
+                      <input autocomplete="off" type="text"   placeholder="Worranty"  name="worranty" class="input" />
+                      <div class="error-text" >
+                        <span class="padding-left"></span>
+                      </div>
+                      <div style="margin-bottom: 10px;">
+                        <h3 class="text-center bottom-border-2px" style="padding: 10px;margin-bottom: 5px;">Asset Type</h3>
+                        <label class="radio-inline" style="margin-right: 15px;">
+                          <input  type="radio" name="assetType" id="paid"  value="Movable" />Movable</label>
+                        <label class="radio-inline pull-right">
+                          <input type="radio"  name="assetType" id="trial" value="Non Movable" [checked]='true' />Non Movable</label>
+                      </div>
+
+                    </div>
+
+
+                  </div>
+
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+                <div class="col-sm-12 col-lg-12 col-md-12 col-xs-12">
+                  <div class="col-md-4 " style="">
+                    <div class="">
+                      <input  value="BACK" type="button" class="btn-singnup  " value="BACK">
+                    </div>
+                  </div>
+                  <div class="col-md-4 ">
+                    <div class="">
+                      <input   value="RESET" type="button" class="btn-singnup">
+                    </div>
+                  </div>
+                  <div class="col-md-4 ">
+                    <div class="">
+                      <input name="submitButton" type="submit"  class="btn-singnup">
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="popup-btn-bg1">
+                <button [hidden]="true" class="btn default"  type="button"></button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--END Customer Management popup-->
+
+
+      </div>
+      <!-- BEGIN CONTENT -->
+      <div class="page-content-wrapper">
+        <div class="page-content">
+          <!--START MAIN PAGE CONTENT-->
+          <div class="row">
+            <div class="col-md-12">
+              <ul class="page-breadcrumb breadcrumb">
+                <li class="btn-group">
+                  <a routerLink="/home" routerLinkActive="active" class="btn default">
+                    Back </a>
+                </li>
+                <li>
+                  <i class="fa fa-home"></i>
+                  <a routerLink="/home" routerLinkActive="active">
+                    HOME </a>
+                  <i class="fa fa-angle-right"></i>
+                </li>
+                <li>
+                  <a routerLink="#" routerLinkActive="active">
+                    Reports  </a>
+                </li>
+              </ul>
+              <!-- END PAGE TITLE & BREADCRUMB-->
+            </div>
+          </div>
+          <div class="row">
+
+            <div class="container">
+
+
+              <!-- BEGIN CONTAINER -->
+              <div class="page-container">
+                <div class="hor-menu margin-top-10 margin-bottom-10">
+                  <h3 class="pull-left">SALES ORDER - SLS000170</h3>
+
+                  <div class="bar-code">
+                    <img src="assets/img/bar-code.jpg" alt="">
+                  </div>
+                </div>
+                <!-- BEGIN CONTENT -->
+                <div class="page-content-wrapper">
+
+                  <div class="row">
+                    <!--START NEW SECTION-->
+                    <div class="col-sm-6">
+                      <div class="branchwise-sales">
+                        <h4 class="pull-left">Customer Details </h4>
+                        <div class="portlet-body flip-scroll">
+                          <table class="table flip-content table-striped">
+                            <tr>
+                              <th>
+                                Name
+                              </th>
+                              <td>
+                                dealerTest
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>
+                                Billing Address
+                              </th>
+                              <td>
+                                pune
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>
+                                Tel/Mobile No.
+                              </th>
+                              <td>
+                                7719969696
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>
+                                Email
+                              </th>
+                              <td>
+                                delwar@demo.com
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>
+                                Delivery Address
+                              </th>
+                              <td>
+                                pune
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+
+                      </div>
+                      <div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="branchwise-sales">
+                        <h4 class="pull-left">Office Details</h4>
+                        <p class="bar-code"><strong>Page 1 / 1</strong></p>
+                        <div class="portlet-body flip-scroll">
+                          <table class="table flip-content table-striped">
+                            <tr>
+                              <th>
+                                Created Date
+                              </th>
+                              <td>
+                                28/04/2015 10:50 AM
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>
+                                Sales Person &amp; Mob. No.
+                              </th>
+                              <td>
+                                Hanuman - 9922918546
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>
+                                Salesman Email
+                              </th>
+                              <td>
+                                hb@kismathardware.in
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>
+                                Ref. By
+                              </th>
+                              <td>
+                                Person
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>&nbsp;
+
+                              </th>
+                              <td>&nbsp;
+
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+
+                      </div>
+                      <div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="row">
+                    <!--START NEW SECTION-->
+                    <div class="col-sm-12">
+                      <div class="branchwise-sales">
+                        <h4>Product List</h4>
+                        <div class="portlet-body">
+                          <div class="table-responsive1">
+                            <table class="table table-striped">
+                              <thead>
+                              <tr>
+                                <th>
+                                  SR. NO.
+                                </th>
+                                <th>
+                                  IMAGE
+                                </th>
+                                <th>
+                                  BRAND
+                                </th>
+                                <th>
+                                  PRODUCT OLD CODE
+                                </th>
+                                <th>
+                                  DESCRIPTION
+                                </th>
+                                <th>
+                                  QTY.
+                                </th>
+                                <th>
+                                  UNIT
+                                </th>
+                                <th>
+                                  RATE
+                                </th>
+                                <th>
+                                  DIS.
+                                </th>
+                                <th>
+                                  TAX DETAILS
+                                </th>
+                                <th>
+                                  AMOUNT
+                                </th>
+                              </tr>
+                              </thead>
+                              <tbody>
+                              <!--START NEW INNER SECTION-->
+                              <tr>
+                                <td>
+                                  01
+                                </td>
+                                <td>
+                                  <div class="sort-img-bg">
+                                    <i class="fa fa-book"></i>
+                                  </div>
+                                </td>
+                                <td>
+                                  KING SLIDE
+                                </td>
+                                <td>
+                                  3M0132500PZZ0SA
+                                </td>
+                                <td>
+                                  100001.01.001.K01.0001 <br> <span>FURNITURE FITTING-DRAWER CHANNEL-K01-ZINC/ CHROME-10"</span>
+                                </td>
+                                <td>
+                                  1.00
+                                </td>
+                                <td>
+                                  SET
+                                </td>
+                                <td>
+                                  203.00
+                                </td>
+                                <td>&nbsp;
+
+                                </td>
+                                <td>
+                                  Vat (12.5%)
+                                </td>
+                                <td>
+                                  203.00
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  02
+                                </td>
+                                <td>
+                                  <div class="sort-img-bg">
+                                    <i class="fa fa-book"></i>
+                                  </div>
+                                </td>
+                                <td>
+                                  KING SLIDE
+                                </td>
+                                <td>
+                                  3M0132500PZZ0SA
+                                </td>
+                                <td>
+                                  100001.01.001.K01.0001 <br> <span>FURNITURE FITTING-DRAWER CHANNEL-K01-ZINC/ CHROME-10"</span>
+                                </td>
+                                <td>
+                                  1.00
+                                </td>
+                                <td>
+                                  SET
+                                </td>
+                                <td>
+                                  203.00
+                                </td>
+                                <td>&nbsp;
+
+                                </td>
+                                <td>
+                                  Vat (12.5%)
+                                </td>
+                                <td>
+                                  203.00
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  03
+                                </td>
+                                <td>
+                                  <div class="sort-img-bg">
+                                    <i class="fa fa-book"></i>
+                                  </div>
+                                </td>
+                                <td>
+                                  KING SLIDE
+                                </td>
+                                <td>
+                                  3M0132500PZZ0SA
+                                </td>
+                                <td>
+                                  100001.01.001.K01.0001 <br> <span>FURNITURE FITTING-DRAWER CHANNEL-K01-ZINC/ CHROME-10"</span>
+                                </td>
+                                <td>
+                                  1.00
+                                </td>
+                                <td>
+                                  SET
+                                </td>
+                                <td>
+                                  203.00
+                                </td>
+                                <td>&nbsp;
+
+                                </td>
+                                <td>
+                                  Vat (12.5%)
+                                </td>
+                                <td>
+                                  203.00
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  03
+                                </td>
+                                <td>
+                                  <div class="sort-img-bg">
+                                    <i class="fa fa-book"></i>
+                                  </div>
+                                </td>
+                                <td>
+                                  KING SLIDE
+                                </td>
+                                <td>
+                                  3M0132500PZZ0SA
+                                </td>
+                                <td>
+                                  100001.01.001.K01.0001 <br> <span>FURNITURE FITTING-DRAWER CHANNEL-K01-ZINC/ CHROME-10"</span>
+                                </td>
+                                <td>
+                                  1.00
+                                </td>
+                                <td>
+                                  SET
+                                </td>
+                                <td>
+                                  203.00
+                                </td>
+                                <td>&nbsp;
+
+                                </td>
+                                <td>
+                                  Vat (12.5%)
+                                </td>
+                                <td>
+                                  203.00
+                                </td>
+                              </tr>
+                              <!--END NEW INNER SECTION-->
+                              <!--START NEW INNER SECTION-->
+                              <tr>
+                                <td colspan="10">
+                                  <p class="color-black pull-right">
+                                    Sub Total
+                                  </p>
+
+                                  <div class="clearfix"></div>
+                                  <p class="pull-right">
+                                    Vat (12.5%)
+                                  </p>
+
+                                  <div class="clearfix"></div>
+                                  <p class="pull-left color-black"><strong>Remarks:</strong> </p>
+                                  <p class="pull-right">
+                                    Round Off
+                                  </p>
+
+                                  <div class="clearfix"></div>
+                                  <p class="pull-left color-black">Eight Hundred and Sixty Eight Rupees</p>
+                                  <p class="color-black pull-right">
+                                    Grand Total
+                                  </p>
+                                </td>
+                                <td>
+                                  <p>
+                                    81708.57
+                                  </p>
+                                  <p>
+                                    35.00
+                                  </p>
+                                  <p>
+                                    4071.43
+                                  </p>
+                                  <p>
+                                    85815.00
+                                  </p>
+                                </td>
+                              </tr>
+                              <!--END NEW INNER SECTION-->
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <!--START NEW SECTION-->
+                    <div class="col-sm-9">
+                      <div class="branchwise-sales">
+                        <h4 class="pull-left">Note </h4>
+                        <div class="clearfix"></div>
+                        <div class="col-lg-12 fontsize10">
+                          <p>1. Tax if any applicable at the site of delivery.</p>
+                          <p>2. Validity 15 days from the date of this quotation.</p>
+                          <p>3. For better communication, please mentionthe reference no.</p>
+                          <p>4. Full payment in advance.</p>
+                          <p>5. Price are subject to revision without notice.</p>
+                          <p>6. No claim of quality &amp; quantity will be entertained, once material leave our shop.</p>
+                        </div>
+                      </div>
+                      <div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <div class="branchwise-sales">
+                        <h4 class="text-center">Thanks &amp; Regards</h4>
+                        <div class="col-lg-12 text-center">
+                          <div class="digital-signature">
+
+                          </div>
+                          <p>Hanuman - 9922918546<br>
+                            hb@kismathardware.in </p>
+                        </div>
+                      </div>
+                      <div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <!--START NEW SECTION-->
+                    <div class="col-sm-12">
+                      <div class="branchwise-sales">
+                        <div class="col-lg-12">
+                          <p class="pull-left margin-top-10">We sincerely thank you for the opportunity provided and look forward to serving you soon. For any queries, please revert to our office at the details provided.  </p>
+                        </div>
+
+                        <div class="clearfix"></div>
+                        <div class="cust-sign">
+                          <div class="col-sm-3">P. S. - </div>
+                          <div class="col-sm-3">P. R. - </div>
+                          <div class="col-sm-3">CUST. SIGN - </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                        <div>
+                          <div class="col-sm-3">PREPAIRED BY - </div>
+                          <div class="col-sm-3">P. C. BY - </div>
+                          <div class="col-sm-3">GOODS CHK BY - </div>
+                          <div class="col-sm-3 margin-bottom-10">DATE &amp; TIME - </div>
+                        </div>
+
+
+                      </div>
+                      <div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- END PAGE CONTENT-->
+
+                </div>
+              </div>
+
+            </div>
+
+
+          </div>
+          <!-- END PAGE CONTENT-->
+        </div>
+      </div>
+
+      <!--START Customer Management popup-->
+      <div class="modal fade email-template" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <h4 class="pull-left">Email Templates</h4>
+            <a data-dismiss="modal" class="pull-right close-btn"><i class="fa fa-times-circle" style="top:0;"></i>
+            </a>
+
+            <div class="clearfix"></div>
+            <div class="divider2"></div>
+
+            <div class="portlet-body margin-top-20 email-bg">
+              <div class="col-lg-12">
+                <div class="row">
+                  <div class="col-lg-2"><label>To</label></div>
+                  <div class="col-lg-10"><input name="" type="text" class="form-control"></div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-2"><label class="control-label">cc</label></div>
+                  <div class="col-lg-10"><input name="" type="text" class="form-control"></div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-2"><label class="control-label">Bcc</label></div>
+                  <div class="col-lg-10"><input name="" type="text" class="form-control"></div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-2"><label class="control-label">Subject</label></div>
+                  <div class="col-lg-10"><input name="" type="text" class="form-control"></div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-2"><label class="control-label">Email Body</label></div>
+                  <div class="col-lg-10"><textarea name="" cols="" rows="8" class="form-control"></textarea></div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-2"><label class="control-label">Attachment</label></div>
+                  <div class="col-lg-6"><input name="" type="file"></div>
+                </div>
+                <div class="row margin-bottom-10">
+                  <div class="col-lg-2"></div>
+                  <div class="col-lg-6"><input name="" type="button" class="btn orange" value="Send Email"></div>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+
+          </div>
+        </div>
+      </div>
+      <!--END Customer Management popup-->
+
+      <!-- END CONTENT -->
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog modal-lg" align="center">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <div class="headeModel">
+              <label class="header-label" style="color: #000000;">Reports Management</label>
+              <ul  id="crud-option">
+                <li><a title="Add" data-toggle="pill" href="#add">
+
+                  <button mat-icon-button>
+                    <mat-icon aria-label="Example icon-button with a add icon">add</mat-icon>
+                  </button>
+                </a>
+                </li>
+                <li><a title="Edit" data-toggle="pill" href="#edit">
+
+                  <button mat-icon-button>
+                    <mat-icon aria-label="Example icon-button with a edit icon">edit</mat-icon>
+                  </button>
+                </a>
+                </li>
+                <li><a title="Delete" data-toggle="pill" href="#delete">
+
+                  <button mat-icon-button>
+                    <mat-icon aria-label="Example icon-button with a delete icon">delete</mat-icon>
+                  </button>
+
+
+                </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="tab-content">
+
+
+
+
+
+              <app-stepper-reports></app-stepper-reports>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END CONTAINER -->
+
+
+    <footer></footer>

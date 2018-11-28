@@ -1,0 +1,135 @@
+<header></header>
+<div class="clearfix">
+</div>
+<div class="container page-full-width">
+    <!-- BEGIN CONTAINER -->
+	<div id="login" class="page-container">
+        <!-- BEGIN CONTENT -->
+		<div class="page-content-wrapper">
+            <form [formGroup]="formGroup" (ngSubmit)="post()">
+            <div class="row" >
+                <div class="col-md-12">
+                <!--START MAIN PAGE CONTENT-->
+              <div class="col-md-4"  style="">
+                        <div class="sign-in-bg" id="outer">
+                                <h3 class="text-center  bottom-border-2px bottom-margin-5px"  bottom-border-2px>Scociety Details</h3>
+                                    <input autocomplete="off" id="user" formControlName="societyName" type="text"   placeholder="Society name . ex-(Apna Society)" name="_societyName" class="" />
+                                    <div class="error-text">
+                                        <span class="padding-left {{s_b_nameCss}} ">{{societyNameError}}</span>
+                                    </div>
+                                    <input autocomplete="off" formControlName="owenerName" type="text"   placeholder="Society contact person Name" name="_societyOwenerName" class="required-fields" />
+                                    <div class="error-text"  >
+                                        <span class="padding-left ">{{owenerNameError}}</span>
+                                    </div>
+                                    <input autocomplete="off" formControlName="societyEmail" type="text"    placeholder="Society email-id" name="_societyEmailId" class="required-fields" />
+                                    <div class="error-text"  >
+                                        <span class="padding-left ">{{societyEmailIdError}}</span>
+                                    </div>
+                                    <input autocomplete="off" formControlName="societyMobileNo" type="text"    placeholder="Society Mobile No" name="_societyMobileNo" class="required-fields" />
+                                    <div class="error-text" >
+                                        <span class="padding-left">{{societyMobileNoError}}</span>
+                                    </div>
+                                    <input autocomplete="off" formControlName="societyLandLineNo" type="text"    placeholder="Society Landline No" name="_societyLanlineNo" class="" />
+                                    <div class="error-text"  >
+                                        <span class="padding-left">{{houseNameError}}</span>
+                                    </div>
+                                    <input autocomplete="off" formControlName="societyIdNo" type="text"  placeholder="Society Id No" name="_societyIdNo" class="" />
+                                    <div class="error-text"  >
+                                        <span class="padding-left "></span>
+                                    </div>
+                            </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="sign-in-bg" id="outer" >
+                    <h3 class="text-center  bottom-border-2px bottom-margin-5px">Address Details</h3>
+                        <input  autocomplete="off" type="text"  formControlName="houseNo"  placeholder="Name / House No." name="_houseNo" class="{{s_house_b_nameCss}}" />
+                        <div class="error-text"  >
+                            <span class="padding-left ">{{houseNameError}}</span>
+                        </div>
+                        <input  autocomplete="off" type="text" formControlName="streetName"  placeholder="Street Name  / zipcode" name="_streename" class="{{s_street_b_Css}}" />
+                        <div class="error-text"  >
+                            <span class="padding-left">{{streetNameError}}</span>
+                        </div>
+                        <input  autocomplete="off" type="text" formControlName="landmark"  placeholder="Landmark" name="_landmark" class="{{s_land_b_nameCss}}" />
+                        <div class="error-text"  >
+                            <span class="padding-left">{{landMarkError}}</span>
+                        </div>
+                        <select class="{{s_country_b_nameCss}}" formControlName="country" placeholder="select country" >
+                            <option *ngFor=''[ngValue]="i">{{country.country}}</option>
+                        </select>
+                        <div class="error-text"  >
+                            <span class="padding-left">{{countryError}}</span>
+                        </div>
+                        <select class="{{s_state_b_Css}}" formControlName="state">
+                                <option  *ngFor='let state of states; let i=index' [ngValue]="i" >{{state.state   }}</option>
+                        </select>
+                        <div class="error-text"  >
+                            <span class="padding-left">{{stateError}}</span>
+                        </div>
+                        <select class="{{s_city_b_nameCss}}" formControlName="city" >
+                                <option  *ngFor='let city of cities; let i=index' [ngValue]="i">{{city.city}}</option>
+                        </select>
+                        <div class="error-text"  >
+                            <span class="padding-left">{{cityError}}</span>
+                        </div>
+                        <div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" style="">
+                    <div class="sign-in-bg" id="outer" >
+                            <h3 class="text-center  bottom-border-2px bottom-margin-5px">Log In Details</h3>
+                                <input autocomplete="off" type="text" formControlName="emailId"   placeholder="Enter your email-Id" name="email_id" class="{{email_b_Css}}" />
+                                <div class="error-text" >
+                                    <span class="padding-left">{{emailIdError}}</span>
+                                </div>
+                                <input  autocomplete="off" type="password" formControlName="password"  placeholder="New Password" name="_password" id="_password" class="{{password_b_nameCss}}" />
+                                <div class="error-text"  >
+                                    <span class="padding-left">{{passwordError}}</span>
+                                </div>
+                                <input autocomplete="off" type="password" formControlName="confirmPassword"  id="confirmPassword"  placeholder="confirm password" class="{{c_password_b_nameCss}}" />
+                                <div class="error-text"  >
+                                    <span class="padding-left">{{confirmPasswordError}}</span>
+                                </div>
+                                <div>
+                                    <h3 class="text-center bottom-border-2px bottom-margin-5px">Lisance Details</h3>
+                                    <label class="radio-inline" style="margin-right: 15px;">
+                                    <input formControlName="liscense" type="radio" name="liscense" id="paid"  value="free" />Free Version (7 Days)</label>
+                                    <label class="radio-inline pull-right">
+                                    <input type="radio" formControlName="liscense" name="liscense" id="trial" value="paid" />Paid Version</label>
+                                </div>
+                        </div>
+        </div>
+        </div>
+        		<!-- END PAGE CONTENT-->
+            </div>
+            <div class="row" style="margin-top: 0px !important;margin-bottom: 100px;">
+                    <div class="col-md-12" style="">
+                        <div class="col-md-4 " style="">
+                                <div class="sign-up-bg">
+                                    <input (click)="goBackToLogin()" formControlName="backButton" value="BACK" type="button" class="btn-singnup  " value="BACK">
+                                </div>
+                        </div>
+                        <div class="col-md-4 ">
+                            <div class="sign-up-bg">
+                                <input (click)="resetForm()" formControlName="resetButton" value="RESET" type="button" class="btn-singnup">
+                            </div>
+                        </div>
+                        <div class="col-md-4 ">
+                            <div class="sign-up-bg">
+                                <input formControlName="submitButton" type="submit"  class="btn-singnup">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </form>
+        </div>
+     <!-- END CONTENT -->
+	</div>
+	<!-- END CONTAINER -->
+	<!-- BEGIN FOOTER -->
+	<!-- END FOOTER -->
+</div>
+<footer></footer>
+
+

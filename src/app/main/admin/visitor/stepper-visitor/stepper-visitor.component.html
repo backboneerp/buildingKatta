@@ -1,0 +1,80 @@
+
+
+<mat-horizontal-stepper [linear]="isLinear" #stepper style="text-align: center;">
+
+  <mat-step [stepControl]="firstFormGroup">
+    <form [formGroup]="firstFormGroup">
+      <ng-template matStepLabel>Visitor</ng-template>
+      <mat-form-field>
+        <input matInput placeholder="Date" formControlName="firstCtrl" required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Photo"  required>
+      </mat-form-field> <br>
+
+      <mat-form-field>
+        <input matInput placeholder="Visitor Name"  required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Visiting Type"  required>
+      </mat-form-field>
+      <div>
+
+        <button mat-raised-button matStepperNext color="primary">Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="secondFormGroup">
+    <form [formGroup]="secondFormGroup">
+      <ng-template matStepLabel> Details</ng-template>
+      <mat-form-field>
+        <input matInput placeholder="Flat No" formControlName="secondCtrl" required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Owner Name"  required>
+      </mat-form-field><br>
+
+      <mat-form-field>
+        <input matInput placeholder="Relation type"  required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Purpose "  required>
+      </mat-form-field>
+
+
+      <div>
+        <button mat-raised-button matStepperPrevious color="primary">Back</button>
+        <button mat-raised-button matStepperNext color="primary">Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step>
+    <form [formGroup]="secondFormGroup">
+      <ng-template matStepLabel>Description</ng-template>
+      <mat-form-field>
+        <input matInput placeholder="Description" formControlName="secondCtrl" required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="In Date and time"  required>
+      </mat-form-field><br>
+
+      <mat-form-field>
+        <input matInput placeholder="Out Date and time"  required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Attach Id"  required>
+      </mat-form-field>
+      <div>
+        <button mat-raised-button matStepperPrevious color="primary">Back</button>
+        <button mat-raised-button (click)="stepper.reset()" color="primary">Reset</button>
+      </div>
+    </form>
+  </mat-step>
+</mat-horizontal-stepper>
+

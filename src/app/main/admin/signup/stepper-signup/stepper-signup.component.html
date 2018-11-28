@@ -1,0 +1,141 @@
+
+
+
+
+
+
+<mat-horizontal-stepper [linear]="isLinear" #stepper>
+  <mat-step [stepControl]="firstFormGroup">
+    <form [formGroup]="firstFormGroup">
+      <div class="col-md-6">
+        <mat-form-field>
+          <input matInput placeholder="Email Id" formControlName="email" required>
+        </mat-form-field>
+      </div>
+      <div class="col-md-6">
+        <mat-form-field>
+          <input matInput placeholder="New Password"  required>
+        </mat-form-field>
+      </div>
+
+      <mat-form-field>
+        <input matInput placeholder="Conform Password"  required>
+      </mat-form-field>
+
+      <div>
+        <button mat-button style="color: #1a73e8;" class="left" (click)="btnClick();">Sign in instead</button>
+        <button mat-raised-button color="primary" class="right" matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="secondFormGroup">
+    <form [formGroup]="secondFormGroup">
+
+      <div class="col-md-6">
+        <mat-form-field>
+          <input matInput placeholder="Name/House No." formControlName="name"  required>
+        </mat-form-field>
+      </div>
+      <div class="col-md-6">
+        <mat-form-field>
+          <input matInput placeholder="Street Name/Zipcode"  required>
+        </mat-form-field>
+      </div>
+      <div class="col-md-6">
+        <mat-form-field>
+          <input matInput placeholder="Landmark"  required>
+        </mat-form-field>
+      </div>
+      <div class="col-md-6">
+        <mat-form-field>
+          <mat-select placeholder="Country">
+            <mat-option *ngFor="let food of foods" [value]="food.value">
+              {{food.viewValue}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="col-md-6">
+        <mat-form-field>
+          <mat-select placeholder="State">
+            <mat-option>None</mat-option>
+            <mat-option *ngFor="let state of states" [value]="state">{{state}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+      </div>
+      <div class="col-md-6">
+        <mat-form-field>
+          <mat-select placeholder="City">
+            <mat-option>None</mat-option>
+            <mat-option *ngFor="let city of cities" [value]="city">{{city}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div>
+        <button mat-raised-button color="primary" class="left" matStepperPrevious>Back</button>
+        <button mat-raised-button color="primary" class="right" matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+
+  <mat-step [stepControl]="thirdFormGroup">
+    <form [formGroup]="thirdFormGroup">
+
+      <div class="col-md-6">
+        <mat-form-field>
+          <input matInput placeholder="Society Name" formControlName="emailId" required>
+        </mat-form-field>
+      </div>
+      <div class="col-md-6">
+        <mat-form-field>
+          <input matInput placeholder="Society Contact Person"  required>
+        </mat-form-field>
+      </div>
+      <div class="col-md-6">
+        <mat-form-field>
+          <input matInput placeholder="Society Email Id"  required>
+        </mat-form-field>
+      </div>
+      <div class="col-md-6">
+        <mat-form-field>
+          <input matInput placeholder="Society Contact No."  required>
+        </mat-form-field>
+      </div>
+      <div class="col-md-6">
+        <mat-form-field>
+          <input matInput placeholder="Society Landline No."  required>
+        </mat-form-field>
+      </div>
+      <div class="col-md-6">
+        <mat-form-field>
+          <input matInput placeholder="Society Id No."  required>
+        </mat-form-field>
+      </div>
+
+    <div>
+      <button mat-raised-button color="primary" class="left" matStepperPrevious>Back</button>
+      <button mat-raised-button color="primary" class="right" matStepperNext>Next</button>
+
+    </div>
+    </form>
+  </mat-step>
+
+  <mat-step [stepControl]="forthFormGroup"><br><br>
+    <form [formGroup]="forthFormGroup">
+<h3>Account Type</h3>
+    <mat-radio-group>
+      <mat-radio-button value="1">Free Version (7 Days)</mat-radio-button>
+      <mat-radio-button value="2">Paid Version</mat-radio-button>
+    </mat-radio-group>
+
+
+<br><br><br><br>
+    <div>
+      <button mat-raised-button color="primary" class="left" matStepperPrevious>Back</button>
+      <button mat-raised-button color="primary" class="right" (click)="onSave()" matStepperNext>Next</button>
+      <!--<button mat-raised-button color="primary" class="right" (click)="stepper.reset()">Reset</button>-->
+    </div>
+    </form>
+  </mat-step>
+</mat-horizontal-stepper>
